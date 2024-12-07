@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empresa>
+    <codigo_empresa>001</codigo_empresa>
+    <nombre>Nike</nombre>
+    <telefono>913753366</telefono>
+    <direccion>1 Bowerman Drive, Beaverton, Oregon, USA</direccion>
+    <email>contacto@nike.com</email>
+    <web>https://www.nike.com</web>
+</empresa>
