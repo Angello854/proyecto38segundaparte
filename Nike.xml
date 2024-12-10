@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<empresa>
-    <codigo_empresa>001</codigo_empresa>
-    <nombre>Nike</nombre>
-    <telefono>913753366</telefono>
-    <direccion>1 Bowerman Drive, Beaverton, Oregon, USA</direccion>
-    <email>contacto@nike.com</email>
-    <web>https://www.nike.com</web>
-</empresa>
+<datos>
+
+    <empresa>
+        <codigo_empresa>001</codigo_empresa>
+        <nombre>Nike</nombre>
+        <telefono>913753366</telefono>
+        <direccion>1 Bowerman Drive, Beaverton, Oregon, USA</direccion>
+        <email>contacto@nike.com</email>
+        <web>https://www.nike.com</web>
+    </empresa>
+
+    <indice>
+        <codigo_indice>001</codigo_indice>
+        <porcentaje medida="%">50</porcentaje>
+        <nombre>Puntuación Final</nombre>
+        <descripcion>Indica la nota final, siguiendo cinco políticas(POLICIES & COMMITMENTS GOVERNANCE TRACEABILITY KNOW, SHOW & FIX SPOTLIGHT ISSUES)</descripcion>
+    </indice>
+	
+</datos>
