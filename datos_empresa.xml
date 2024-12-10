@@ -1,26 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-    <!-- Definimos el elemento raíz -->
-    <xs:element name="empresa">
+
+    <xs:element name="datos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="codigo_empresa" type="xs:string" />
-                <xs:element name="nombre" type="xs:string" />
-                <xs:element name="telefono" type="xs:string" minOccurs="1"/>
-                <xs:element name="direccion" type="xs:string" minOccurs="1" />
-                <xs:element name="email" type="xs:string" minOccurs="1">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
-                        </xs:restriction>
-                    </xs:simpleType>
+  
+                <xs:element name="empresa">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigo_empresa" type="xs:string" />
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="telefono" type="xs:string" minOccurs="1" />
+                            <xs:element name="direccion" type="xs:string" minOccurs="1" />
+                            <xs:element name="email" type="xs:string" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="web" type="xs:string" minOccurs="1">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="https?://.+" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
                 </xs:element>
-                <xs:element name="web" type="xs:string" minOccurs="1">
-                    <xs:simpleType>
-                        <xs:restriction base="xs:string">
-                            <xs:pattern value="https?://.+"/>
-                        </xs:restriction>
-                    </xs:simpleType>
+				
+                <xs:element name="indice">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="codigo_empresa" type="xs:string" />
+                            <xs:element name="codigo_indice" type="xs:string" />
+                            <xs:element name="porcentaje" type="xs:decimal" />
+                            <xs:element name="nombre" type="xs:string" />
+                            <xs:element name="puntuacion" type="xs:integer" />
+                            <xs:element name="descripcion" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
                 </xs:element>
             </xs:sequence>
         </xs:complexType>
